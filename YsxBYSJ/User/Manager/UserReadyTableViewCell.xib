@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="UserReadyTableViewCell" customModule="YsxBYSJ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="201"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPK-84-puo" userLabel="time">
+                        <rect key="frame" x="258" y="171" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMc-Lt-WE5" userLabel="address">
+                        <rect key="frame" x="40" y="171" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sk5-QZ-UGT" userLabel="name">
+                        <rect key="frame" x="20" y="140" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ticket_homepage_nav_place" translatesAutoresizingMaskIntoConstraints="NO" id="kHr-r5-MWr">
+                        <rect key="frame" x="20" y="173" width="16" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="QzN-HS-eqg"/>
+                            <constraint firstAttribute="height" constant="17" id="eyr-SM-z8b"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mEn-SR-ROs" userLabel="titleImage">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="125" id="LkL-8m-kmr"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mEn-SR-ROs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0Aj-xU-PzX"/>
+                    <constraint firstItem="sk5-QZ-UGT" firstAttribute="top" secondItem="mEn-SR-ROs" secondAttribute="bottom" constant="15" id="2f0-tz-jNd"/>
+                    <constraint firstItem="mEn-SR-ROs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ARw-Sx-KMC"/>
+                    <constraint firstItem="kHr-r5-MWr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="D4b-lb-cfp"/>
+                    <constraint firstItem="BMc-Lt-WE5" firstAttribute="leading" secondItem="kHr-r5-MWr" secondAttribute="trailing" constant="4" id="NEn-Jk-4K1"/>
+                    <constraint firstAttribute="bottom" secondItem="kHr-r5-MWr" secondAttribute="bottom" constant="10" id="Pmb-cr-o4x"/>
+                    <constraint firstAttribute="trailing" secondItem="tPK-84-puo" secondAttribute="trailing" constant="20" id="Tg0-X0-a6O"/>
+                    <constraint firstItem="tPK-84-puo" firstAttribute="centerY" secondItem="kHr-r5-MWr" secondAttribute="centerY" id="VQM-pG-DPc"/>
+                    <constraint firstItem="BMc-Lt-WE5" firstAttribute="centerY" secondItem="kHr-r5-MWr" secondAttribute="centerY" id="drN-XL-W0O"/>
+                    <constraint firstItem="sk5-QZ-UGT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="eYm-g6-QiY"/>
+                    <constraint firstAttribute="trailing" secondItem="mEn-SR-ROs" secondAttribute="trailing" id="y9K-o1-jMK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="BMc-Lt-WE5" id="3cX-2c-Qu0"/>
+                <outlet property="nameLabel" destination="sk5-QZ-UGT" id="GTt-3a-DmP"/>
+                <outlet property="timeLabel" destination="tPK-84-puo" id="3n8-2k-8Yw"/>
+                <outlet property="titleImage" destination="mEn-SR-ROs" id="b93-FP-xYh"/>
+            </connections>
+            <point key="canvasLocation" x="295" y="381.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ticket_homepage_nav_place" width="30" height="30"/>
+    </resources>
+</document>
